@@ -95,22 +95,24 @@
 
         <div class="row" data-aos="fade-in">
           <div class="col-lg-3 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form method="post" role="form" class="php-email-form">
               <div class="form-group">
                 <label for="name">Año</label>
-                <select class="form-select"">
-                  <option value=" 2023">2023</option>
+                <select id="select-anio" class="form-select">
                 </select>
               </div>
               <div class="form-group">
                 <label for="name">Mes</label>
-                <select class="form-select"">
-                  <option value=" Noviembre">Noviembre</option>
-                  <option value="Octubre">Octubre</option>
-                  <option value="Septiembre">Septiembre</option>
+                <select id="select-mes" class="form-select"">
                 </select>
               </div>
               <div class="text-center"><button type="submit" class="w-100">Consultar</button></div>
+            </form>
+          </div>
+
+          <div class="col-lg-9 mt-lg-0 d-flex align-items-stretch">
+            <form action="" class="php-email-form">
+              <img id="img-recibo" class="w-100 d-none" src="">
             </form>
           </div>
         </div>
@@ -146,10 +148,13 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- JS File recibos -->
+  <script src="assets/js/recibos.js"></script>
 
 </body>
 
